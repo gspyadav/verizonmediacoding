@@ -1,14 +1,17 @@
 package com.verizon.media.SolutionThree;
 
 import com.verizon.media.*;
+import com.verizon.media.SolutionTwo.FilesMoviesDataStore;
 
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class LogFileProcessorThree extends Thread {
 
-    //private Map<String, List<Movie>> moviesListMap;
     private FilesMoviesDataStore moviesDb;
     private String filePath;
     private String threadName;
@@ -35,6 +38,7 @@ public class LogFileProcessorThree extends Thread {
         public static final String LENGTH = "Length";
         public static final String WATCHED = "Watched";
         public static final String VIEWS = "Views";
+        public static final String RATIO = "Ratio";
     }
 
     public void run() {
@@ -118,6 +122,9 @@ public class LogFileProcessorThree extends Thread {
             case SortCriteria.VIEWS:
                 Collections.sort(moviesList, new MovieViewsCompare());
                 break;
+            case SortCriteria.RATIO:
+                Collections.sort(moviesList, new MovieRatioCompare());
+                break;
             case SortCriteria.WATCHED:
                 Collections.sort(moviesList, new MovieWatchedCompare());
                 break;
@@ -127,11 +134,11 @@ public class LogFileProcessorThree extends Thread {
                 break;
         }
 
-        System.out.println("Movie Sorting " + sortCriteria + " " + thread.getName() + " Start Time:" + new Date());
+        System.out.println("Movie Sorting " + sortCriteria + " " + thread.getName() + " Start Time:" + System.currentTimeMillis());
         for (int i = 0; i < 5 && i < moviesList.size(); i++) {
             //Category: Sports Title: Lola plays volleyball with Baxter,
             // Movie Length: 103, Movie Watched: 90, Ratio: 0.8737864077669902, # of Views 99366
-            if (sortCriteria.equals(SortCriteria.WATCHED) && moviesList.get(i).getRatio() < 0.50) {
+            if (sortCriteria.equals(SortCriteria.RATIO) && moviesList.get(i).getRatio() < 0.50) {
                 //Skip it
             } else {
                 System.out.println(thread.getName() + " Category: " + moviesList.get(i).getCategory()
@@ -142,7 +149,7 @@ public class LogFileProcessorThree extends Thread {
                         + ", # of Views " + moviesList.get(i).getViews());
             }
         }
-        System.out.println(" End Time:" + new Date());
+        System.out.println(" End Time:" + System.currentTimeMillis());
         System.out.println();
     }
 
@@ -150,13 +157,12 @@ public class LogFileProcessorThree extends Thread {
         display(SortCriteria.CATEGORY, moviesList);
         display(SortCriteria.TITLE, moviesList);
         display(SortCriteria.LENGTH, moviesList);
+        display(SortCriteria.RATIO, moviesList);
         display(SortCriteria.WATCHED, moviesList);
         display(SortCriteria.VIEWS, moviesList);
     }
 
-
-    //Testing
-    public static void main(String arg[]) {
+    public static void main(String args[]){
         String filePath1 = "C:\\tmp\\Verizon Media Coding Assignment\\log1.txt";
         String filePath2 = "C:\\tmp\\Verizon Media Coding Assignment\\log2.txt";
         String filePath3 = "C:\\tmp\\Verizon Media Coding Assignment\\log3.txt";
@@ -165,6 +171,7 @@ public class LogFileProcessorThree extends Thread {
         FilesMoviesDataStore moviesDb = new FilesMoviesDataStore();
         moviesDb.setMoviesListMap(new HashMap<String, List<Movie>>());
 
+        System.out.println("Starting Time of the process:" + System.currentTimeMillis());
         LogFileProcessorThree thread1 = new LogFileProcessorThree("Thread 1", moviesDb, filePath1);
         LogFileProcessorThree thread2 = new LogFileProcessorThree("Thread 2", moviesDb, filePath2);
         LogFileProcessorThree thread3 = new LogFileProcessorThree("Thread 3", moviesDb, filePath3);
@@ -172,5 +179,7 @@ public class LogFileProcessorThree extends Thread {
         thread1.start();
         thread2.start();
         thread3.start();
+        System.out.println("Ending Time of the process:" + System.currentTimeMillis());
     }
+
 }

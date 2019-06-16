@@ -49,6 +49,7 @@ public class LogFileProcessorTwo extends Thread {
         public static final String LENGTH = "Length";
         public static final String WATCHED = "Watched";
         public static final String VIEWS = "Views";
+        public static final String RATIO = "Ratio";
     }
 
     /**
@@ -134,6 +135,9 @@ public class LogFileProcessorTwo extends Thread {
             case SortCriteria.VIEWS:
                 Collections.sort(moviesDb.getMoviesListMap().get(this.filePath), new MovieViewsCompare());
                 break;
+            case SortCriteria.RATIO:
+                Collections.sort(moviesDb.getMoviesListMap().get(this.filePath), new MovieRatioCompare());
+                break;
             case SortCriteria.WATCHED:
                 Collections.sort(moviesDb.getMoviesListMap().get(this.filePath), new MovieWatchedCompare());
                 break;
@@ -143,11 +147,11 @@ public class LogFileProcessorTwo extends Thread {
                 break;
         }
 
-            System.out.println("Movie Sorting " + sortCriteria + " " + thread.getName() + " Start Time:" + new Date());
+            System.out.println("Movie Sorting " + sortCriteria + " " + thread.getName() + " Start Time:" + System.currentTimeMillis());
             for (int i = 0; i < 5 && i < moviesDb.getMoviesListMap().get(this.filePath).size(); i++) {
                 //Category: Sports Title: Lola plays volleyball with Baxter,
                 // Movie Length: 103, Movie Watched: 90, Ratio: 0.8737864077669902, # of Views 99366
-                if (sortCriteria.equals(SortCriteria.WATCHED) && moviesDb.getMoviesListMap().get(this.filePath).get(i).getRatio() < 0.50) {
+                if (sortCriteria.equals(SortCriteria.RATIO) && moviesDb.getMoviesListMap().get(this.filePath).get(i).getRatio() < 0.50) {
                     //Skip it
                 } else {
                     System.out.println("Category: " + moviesDb.getMoviesListMap().get(this.filePath).get(i).getCategory()
@@ -158,7 +162,7 @@ public class LogFileProcessorTwo extends Thread {
                             + ", # of Views " + moviesDb.getMoviesListMap().get(this.filePath).get(i).getViews());
                 }
             }
-            System.out.println(" End Time:" + new Date());
+            System.out.println(" End Time:" + System.currentTimeMillis());
         }
         System.out.println();
     }
@@ -170,17 +174,13 @@ public class LogFileProcessorTwo extends Thread {
         display(SortCriteria.CATEGORY);
         display(SortCriteria.TITLE);
         display(SortCriteria.LENGTH);
+        display(SortCriteria.RATIO);
         display(SortCriteria.WATCHED);
         display(SortCriteria.VIEWS);
         System.out.println("After Synchronization the size of moviesListMap " + moviesDb.getMoviesListMap().size());
     }
 
-
-    /**
-     *
-     * @param arg
-     */
-    public static void main(String arg[]) {
+    public static void main(String args[]){
         String filePath1 = "C:\\tmp\\Verizon Media Coding Assignment\\log1.txt";
         String filePath2 = "C:\\tmp\\Verizon Media Coding Assignment\\log2.txt";
         String filePath3 = "C:\\tmp\\Verizon Media Coding Assignment\\log3.txt";
@@ -188,7 +188,7 @@ public class LogFileProcessorTwo extends Thread {
         //Central Database shared among all three threads
         FilesMoviesDataStore moviesDb = new FilesMoviesDataStore();
         moviesDb.setMoviesListMap(new HashMap<String, List<Movie>>());
-
+        System.out.println("Starting Time of the process:" + System.currentTimeMillis());
         LogFileProcessorTwo thread1 = new LogFileProcessorTwo("Thread 1", moviesDb, filePath1);
         LogFileProcessorTwo thread2 = new LogFileProcessorTwo("Thread 2", moviesDb, filePath2);
         LogFileProcessorTwo thread3 = new LogFileProcessorTwo("Thread 3", moviesDb, filePath3);
@@ -196,6 +196,7 @@ public class LogFileProcessorTwo extends Thread {
         thread1.start();
         thread2.start();
         thread3.start();
-
+        System.out.println("Ending Time of the process:" + System.currentTimeMillis());
     }
+
 }

@@ -37,6 +37,7 @@ public class LogFileProcessorOne {
         public static final String LENGTH = "Length";
         public static final String WATCHED = "Watched";
         public static final String VIEWS = "Views";
+        public static final String RATIO = "Ratio";
     }
 
     /**
@@ -99,6 +100,9 @@ public class LogFileProcessorOne {
             case SortCriteria.VIEWS:
                 Collections.sort(moviesList, new MovieViewsCompare());
                 break;
+            case SortCriteria.RATIO:
+                Collections.sort(moviesList, new MovieRatioCompare());
+                break;
             case SortCriteria.WATCHED:
                 Collections.sort(moviesList, new MovieWatchedCompare());
                 break;
@@ -106,11 +110,11 @@ public class LogFileProcessorOne {
                 Collections.sort(moviesList);
                 break;
         }
-        System.out.println(" Start Time:" + new Date());
+        System.out.println(" Start Time:" + System.currentTimeMillis());
         for (int i = 0; i < 5 && i < moviesList.size(); i++) {
             //Category: Sports Title: Lola plays volleyball with Baxter,
             // Movie Length: 103, Movie Watched: 90, Ratio: 0.8737864077669902, # of Views 99366
-            if(sortCriteria.equals(SortCriteria.WATCHED) && moviesList.get(i).getRatio()<0.50){
+            if(sortCriteria.equals(SortCriteria.RATIO) && moviesList.get(i).getRatio()<0.50){
                 //Skip it
             }else{
                 System.out.println("Category: " + moviesList.get(i).getCategory()
@@ -121,7 +125,7 @@ public class LogFileProcessorOne {
                         + ", # of Views " + moviesList.get(i).getViews());
             }
         }
-        System.out.println(" End Time:" + new Date());
+        System.out.println(" End Time:" + System.currentTimeMillis());
         System.out.println();
     }
 
@@ -133,6 +137,7 @@ public class LogFileProcessorOne {
         display(moviesList, SortCriteria.CATEGORY);
         display(moviesList, SortCriteria.TITLE);
         display(moviesList, SortCriteria.LENGTH);
+        display(moviesList, SortCriteria.RATIO);
         display(moviesList, SortCriteria.WATCHED);
         display(moviesList, SortCriteria.VIEWS);
     }
@@ -148,22 +153,17 @@ public class LogFileProcessorOne {
         displayProcessor(moviesListMap.get(filePath));
     }
 
-
-    /**
-     * main method for sample test run of this individual class
-     * @param arg
-     */
-    public static void main(String arg[]) {
-
+    public static void main(String args[]){
         String filePath1 = "C:\\tmp\\Verizon Media Coding Assignment\\log1.txt";
         String filePath2 = "C:\\tmp\\Verizon Media Coding Assignment\\log2.txt";
         String filePath3 = "C:\\tmp\\Verizon Media Coding Assignment\\log3.txt";
 
         LogFileProcessorOne obj = new LogFileProcessorOne();
-        System.out.println("Starting Time of the process:" + new Date());
+        System.out.println("Starting Time of the process:" + System.currentTimeMillis());
         obj.processLogFile(filePath1);
         obj.processLogFile(filePath2);
         obj.processLogFile(filePath3);
-        System.out.println("Ending Time of the process:" + new Date());
+        System.out.println("Ending Time of the process:" + System.currentTimeMillis());
     }
+
 }
