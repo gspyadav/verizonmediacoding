@@ -8,7 +8,9 @@ This is Verizon Media Interview Assignment Task and include 3 different solution
 ## Running the tests
 
 ### Solution One Testing
-LogFileProcessorOne is the main class for Solution One. Use the main() method for testing the functionality.
+Source Code: verizonmediacoding\src\main\java\com\verizon\media\SolutionOne\LogFileProcessorOne.java
+
+1. Use the main() method for testing the functionality.
 
 ```
 Change the file paths in LogFileProcessorOne.main() method example:
@@ -19,7 +21,9 @@ Run the main() method.
 ```
 
 ### Solution Two Testing
-LogFileProcessorTwo is the main class for Solution One. Use the main() method for testing the functionality. This classes uses the FilesMoviesDataStore class as a central DataBase, which is shared among all the Threads.
+Source Code: verizonmediacoding\src\main\java\com\verizon\media\SolutionOne\LogFileProcessorTwo.java
+
+1. Use the main() method for testing the functionality. This classes uses the FilesMoviesDataStore class as a central DataBase, which is shared among all the Threads.
 Synchronised the display() method on the Object moviesDb to make sure each time we print first 5 elements of each sorting criteria together for each Thread.
 
 ```
@@ -38,13 +42,15 @@ For Testing purpose I created the sample Test Steps in main(), just change the F
 ```
 
 ### Solution Three Testing
-Source code is almost similar to Solution Two solution with minor changes to show how CompletableFuture asynchronous calls work.
-Below is major logic where we calling readFile(filePath), and displayProcessor(moviesList) asynchronously. 
+Source Code: verizonmediacoding\src\main\java\com\verizon\media\SolutionOne\LogFileProcessorThree.java
 
-filePath is taken as a input to readFile() method and then use the return value of this method moviesList is used as a input to the next asynchronous call displayProcessor().
+1. Source code is almost similar to Solution Two solution with minor changes to show how CompletableFuture asynchronous calls work.
 
-Using thenAcceptAsync because we are not expecting any return value.
+2. filePath is taken as a input to readFile() method and then use the return value of this method moviesList is used as a input to the next asynchronous call displayProcessor().
 
+3. Using thenAcceptAsync because we are not expecting any return value.
+
+4. Below is major logic where we calling readFile(filePath), and displayProcessor(moviesList) asynchronously.
 ```
     CompletableFuture<Void> cf1 = CompletableFuture.completedFuture(filePath).thenApplyAsync(filePath -> {
         System.out.println("Running Thread #: " + threadName);
