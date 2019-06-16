@@ -188,6 +188,7 @@ public class LogFileProcessorTwo extends Thread {
         //Central Database shared among all three threads
         FilesMoviesDataStore moviesDb = new FilesMoviesDataStore();
         moviesDb.setMoviesListMap(new HashMap<String, List<Movie>>());
+
         System.out.println("Starting Time of the process:" + System.currentTimeMillis());
         LogFileProcessorTwo thread1 = new LogFileProcessorTwo("Thread 1", moviesDb, filePath1);
         LogFileProcessorTwo thread2 = new LogFileProcessorTwo("Thread 2", moviesDb, filePath2);

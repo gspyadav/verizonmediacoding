@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe3f5f9b-7498-48df-9c34-2a8d412a7de3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/verizon/media/MovieLengthCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/verizon/media/MovieLengthCompare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionOne/LogFileProcessorOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionOne/LogFileProcessorOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionThree/FilesMoviesDataStore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionThree/LogFileProcessorThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionThree/LogFileProcessorThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionTwo/LogFileProcessorTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionTwo/LogFileProcessorTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/verizon/media/LogFileProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verizon/media/LogFileProcessorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/verizon/media/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/verizon/media/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/verizon/media/MovieLengthCompare.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/verizon/media/MovieLengthCompare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/verizon/media/SolutionOne/LogFileProcessorOne$SortCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/verizon/media/SolutionOne/LogFileProcessorOne$SortCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/verizon/media/SolutionOne/LogFileProcessorOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/verizon/media/SolutionOne/LogFileProcessorOne.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/verizon/media/SolutionThree/FilesMoviesDataStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/verizon/media/SolutionThree/LogFileProcessorThree$SortCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/verizon/media/SolutionThree/LogFileProcessorThree$SortCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/verizon/media/SolutionThree/LogFileProcessorThree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/verizon/media/SolutionThree/LogFileProcessorThree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/verizon/media/SolutionTwo/LogFileProcessorTwo$SortCriteria.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/verizon/media/SolutionTwo/LogFileProcessorTwo$SortCriteria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/verizon/media/SolutionTwo/LogFileProcessorTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/verizon/media/SolutionTwo/LogFileProcessorTwo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/verizon/media/LogFileProcessorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/verizon/media/LogFileProcessorTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,14 +31,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="30" />
+          <entry key="java" value="31" />
           <entry key="md" value="2" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="30" />
+          <entry key="JAVA" value="31" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
@@ -62,15 +46,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="40" />
-          <entry key="java" value="4260" />
-          <entry key="md" value="505" />
+          <entry key="java" value="4262" />
+          <entry key="md" value="1929" />
           <entry key="xml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4260" />
-          <entry key="Markdown" value="505" />
+          <entry key="JAVA" value="4262" />
+          <entry key="Markdown" value="1929" />
           <entry key="PLAIN_TEXT" value="40" />
           <entry key="XML" value="14" />
         </counts>
@@ -88,44 +72,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="119">
-                <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <first_editor relative-caret-position="252">
+                <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/verizon/media/LogFileProcessorTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionTwo/FilesMoviesDataStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+            <state relative-caret-position="119">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#375#376#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/MovieLengthCompare.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/verizon/media/LogFileProcessorTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="16" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionOne/LogFileProcessorOne.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-338">
-              <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+              <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionTwo/LogFileProcessorTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+            <state relative-caret-position="285">
+              <caret line="190" selection-start-line="190" selection-end-line="190" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionThree/LogFileProcessorThree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
+            <state relative-caret-position="166">
+              <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="52" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -216,11 +193,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/verizon/media/Movie.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/verizon/media/MovieLengthCompare.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/verizon/media/MovieRatioCompare.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionOne/LogFileProcessorOne.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionTwo/LogFileProcessorTwo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionThree/LogFileProcessorThree.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/verizon/media/LogFileProcessorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionTwo/LogFileProcessorTwo.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -372,7 +349,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560660128862" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560662098555" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -544,7 +521,7 @@
       <updated>1560569081847</updated>
       <workItem from="1560569084511" duration="4660000" />
       <workItem from="1560614023189" duration="35225000" />
-      <workItem from="1560657776147" duration="2350000" />
+      <workItem from="1560657776147" duration="4317000" />
     </task>
     <servers />
   </component>
@@ -581,7 +558,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42235000" />
+    <option name="totallyTimeSpent" value="44202000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,7 +573,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18910742" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18910742" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -605,7 +582,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.56122446" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.56122446" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -714,22 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionTwo/FilesMoviesDataStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionThree/FilesMoviesDataStore.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/MovieRatioCompare.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -745,37 +706,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/MovieLengthCompare.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/verizon/media/LogFileProcessorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="119">
-            <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionTwo/LogFileProcessorTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionThree/LogFileProcessorThree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -784,21 +718,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionOne/LogFileProcessorOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-338">
-          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        <state relative-caret-position="251">
+          <caret line="158" column="80" lean-forward="true" selection-start-line="156" selection-start-column="8" selection-end-line="158" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/verizon/media/LogFileProcessorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionTwo/FilesMoviesDataStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionTwo/LogFileProcessorTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="190" selection-start-line="190" selection-end-line="190" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/MovieLengthCompare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/verizon/media/SolutionThree/LogFileProcessorThree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="52" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="252">
+            <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
