@@ -48,7 +48,7 @@ Source Code: verizonmediacoding\src\main\java\com\verizon\media\SolutionOne\LogF
 
 2. filePath is taken as a input to readFile() method and then use the return value of this method moviesList is used as a input to the next asynchronous call displayProcessor().
 
-3. Using thenAcceptAsync because we are not expecting any return value.
+3. Using "thenAcceptAsync" because we are not expecting any return value.
 
 4. Below is major logic where we calling readFile(filePath), and displayProcessor(moviesList) asynchronously.
 ```
