@@ -50,7 +50,7 @@ Source Code: verizonmediacoding\src\main\java\com\verizon\media\SolutionOne\LogF
 
 3. Using "thenAcceptAsync" because we are not expecting any return value.
 
-4. Below is major logic where we calling readFile(filePath), and displayProcessor(moviesList) asynchronously.
+4. Below is block of code where I'm calling readFile(filePath), and displayProcessor(moviesList) asynchronously using CompletableFuture.
 ```
     CompletableFuture<Void> cf1 = CompletableFuture.completedFuture(filePath).thenApplyAsync(filePath -> {
         System.out.println("Running Thread #: " + threadName);
